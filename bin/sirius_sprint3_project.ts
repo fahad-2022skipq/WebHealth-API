@@ -4,6 +4,7 @@ import * as cdk from 'aws-cdk-lib';
 import { SiriusSprint3ProjectStack } from '../lib/sirius_sprint3_project-stack';
 
 const app = new cdk.App();
+cdk.Tags.of(app).add("name","Fahad Ali")
 new SiriusSprint3ProjectStack(app, 'SiriusSprint3ProjectStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
@@ -15,7 +16,7 @@ new SiriusSprint3ProjectStack(app, 'SiriusSprint3ProjectStack', {
 
   /* Uncomment the next line if you know exactly what Account and Region you
    * want to deploy the stack to. */
-  // env: { account: '123456789012', region: 'us-east-1' },
+  env: { account: '315997497220', region: 'us-east-2' },
 
   /* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
 });
